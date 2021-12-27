@@ -11,14 +11,15 @@ const Counter = () => {
   return (
     <>
       <h1>{number1}</h1>
+    {/* console.log에서는 값이 변하지만 화면상으로 변할때 새 render을 해 주어야한다.*/}
       <button
         onClick={() => {
-          return (number1 += 1);
+          number1 += 1;
+          console.log(number1);
         }}
       >
         ++
       </button>
-
       <h1>{number}</h1>
       <button
         onClick={() => {
