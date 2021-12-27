@@ -7,7 +7,7 @@ function App() {
   //<Jsx />
   return (
     <MyComponent name="React" name2=".js">
-      안녕하세요
+      안녕하세요(children 값)
     </MyComponent>
   );
 }
